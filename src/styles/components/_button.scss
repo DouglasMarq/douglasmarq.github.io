@@ -1,0 +1,56 @@
+.menu-button {
+    &:link,
+        &:visited {
+            display: inline-block;
+            font-size: 1.4rem;
+            font-weight: 400;
+            padding: 0.2rem 3rem;
+            color: $color-white;
+            text-decoration: none;
+            text-transform: uppercase;
+            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
+            background-size: 300%;
+            transition: all .4s;
+            span {
+                display: inline-block;
+            }
+        }
+
+        &:hover,
+        &:active {
+            background-position: 100%;
+            color: $color-black;
+            transform: translateX(1rem);
+        }
+}
+
+.circle-button{
+    color: #ccc;
+    display: inline-block;
+    font-size: 2rem;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+  }
+
+  .circle-button:hover{
+    animation: circle-anim 0.3s ease forwards;
+    transition: all 0.4s ease;
+  }
+
+  .grow-container{
+    display: inline-block;
+    margin: 1em;
+  }
+
+  .to-red:hover{
+    background: #E5393F;
+  }
+
+
+  .to-linkedin:hover{
+    background: #0077B5;
+  }
+
+  .to-grey:hover{
+    background: #272525;
+  }

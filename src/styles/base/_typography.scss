@@ -1,0 +1,31 @@
+body {
+    font-family: "Noto Serif";
+    font-weight: 500;
+    line-height: 1.5;
+    color: $color-grey-dark;
+}
+
+.heading-primary {
+    color: $color-white;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 4rem;
+    &--main {
+        display: block;
+        font-size: 4rem;
+        font-weight: 400;
+        letter-spacing: 0.7rem;
+    }
+    &--sub {
+        font-size: 1.5rem;
+        font-weight: 700px;
+        letter-spacing: 0.6rem;
+    }
+    &--blink {
+      font-size: 3rem;
+      display: inline-block;
+      animation: fade 1250ms infinite;
+      -webkit-animation: fade 1250ms infinite;
+      font-weight: 100;
+  }
+}

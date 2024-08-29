@@ -1,0 +1,78 @@
+{
+    "name": "douglasmarques-site",
+    "version": "1.0.0",
+    "private": true,
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/DouglasMarq/douglasmarques-site"
+    },
+    "keywords": [
+        "mean",
+        "mern",
+        "mearn",
+        "template",
+        "angular",
+        "node",
+        "express",
+        "simple",
+        "github"
+    ],
+    "author": "Douglas Marques Alves <douglas.marq.alves@outlook.com>",
+    "license": "MIT",
+    "homepage": "https://douglasmarq.github.io/douglasmarq.github.io",
+    "bugs": {
+        "url": "https://github.com/DouglasMarq/douglasmarques-site/issues"
+    },
+    "dependencies": {
+        "@fontsource/noto-serif": "5.0.20",
+        "@fortawesome/fontawesome-svg-core": "6.6.0",
+        "@fortawesome/free-brands-svg-icons": "6.6.0",
+        "@fortawesome/free-regular-svg-icons": "6.6.0",
+        "@fortawesome/react-fontawesome": "0.2.2",
+        "@redux-devtools/extension": "3.3.0",
+        "@reduxjs/toolkit": "^2.2.7",
+        "@tsparticles/react": "^3.0.0",
+        "connected-next-router": "5.0.0",
+        "next": "14.2.7",
+        "next-redux-wrapper": "8.1.0",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-redux": "^9.1.2",
+        "redux": "5.0.1",
+        "redux-persist": "6.0.0",
+        "redux-thunk": "3.1.0",
+        "rodal": "2.1.0",
+        "sass": "1.77.8",
+        "scheduler": "0.23.2",
+        "tsparticles": "^3.5.0"
+    },
+    "scripts": {
+        "build": "next build",
+        "dev": "next dev",
+        "start": "next start -H 0.0.0.0 -p ${PORT:-8080}",
+        "export": "next export",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "gh-pages": "^6.1.1"
+    }
+}

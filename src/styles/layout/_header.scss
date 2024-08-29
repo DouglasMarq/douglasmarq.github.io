@@ -1,0 +1,38 @@
+.header {
+    height: 100vh;
+    // background-image: url("../../assets/img/home-background-webp.webp");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    &__logo-box {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__logo {
+        height: 22rem;
+        animation: fadeOut;
+        animation-duration: 1s;
+    }
+    &__text-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+
+.blog-header {
+  &-start {
+    // position: absolute;
+    // left: 15%;
+    // transform: translate(-50%, -50%);
+  }
+
+  &-center {
+    color: #696666 !important;
+    font-size: 3rem;
+  }
+}
