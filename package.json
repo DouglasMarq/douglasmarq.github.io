@@ -55,7 +55,7 @@
         "start": "next start -H 0.0.0.0 -p ${PORT:-8080}",
         "export": "next export",
         "predeploy": "npm run build",
-        "deploy": "gh-pages -d build"
+        "deploy": "gh-pages -d dist -t true"
     },
     "eslintConfig": {
         "extends": "react-app"

@@ -1,7 +1,7 @@
 
 module.exports = {
   output: 'export',
-  basePath: "/nextjs-github-pages",
+  distDir: 'dist',
   images: {
     unoptimized: true,
   },
