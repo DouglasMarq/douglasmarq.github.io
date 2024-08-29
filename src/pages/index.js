@@ -55,30 +55,29 @@ class Home extends Component {
                 <Particles
                     options={{
                         retina_detect: false,
-                        fpsLimit: 30,
+                        fpsLimit: 60,
                         particles: {
                             size: {
-                                value: 1,
-                                random: false
+                                value: 1
                             },
                             number: {
                                 value: 80,
-                                density: {
-                                    enable: true,
-                                    value_area: 800
-                                }
+                                // density: {
+                                //     enable: true,
+                                //     value_area: 800
+                                // }
                             },
                             move: {
                                 enable: true,
                                 speed: 1,
                                 outMode: "bounce"
                             },
-                            line_linked: {
-                                enable: true,
-                                distance: 100,
-                                width: 0.5,
-                                opacity: 0.4
-                            },
+                            links: {
+                                distance: 120,
+                                width: 0.8,
+                                opacity: 0.4,
+                                enable: true
+                            }
                         }
                     }} />
                 <header id='header' class="header">
