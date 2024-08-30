@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import FloatingIconsComponent from '../components/FloatingIcons/FloatingIconComponent';
 import Particles, { initParticlesEngine } from '@tsparticles/react'
+import { loadParticlesLinksInteraction } from '@tsparticles/interaction-particles-links'
 import { loadFull } from "tsparticles";
 import Rodal from 'rodal';
 
@@ -11,7 +12,9 @@ class Home extends Component {
         this.particlesLoaded = this.particlesLoaded.bind(this);
 
         initParticlesEngine(async engine => {
-           await loadFull(engine);
+           await loadFull(engine, false);
+           await loadParticlesLinksInteraction(engine, false);
+           await engine.refresh(true);
         }).then(() => {
             this.setState({
                 particlesInitialized: true,
@@ -54,8 +57,9 @@ class Home extends Component {
             <div>
                 <Particles
                     options={{
-                        retina_detect: false,
+                        detectRetina: false,
                         fpsLimit: 60,
+                        autoPlay: true,
                         particles: {
                             size: {
                                 value: 1
