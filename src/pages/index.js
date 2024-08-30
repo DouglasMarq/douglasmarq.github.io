@@ -4,6 +4,7 @@ import FloatingIconsComponent from '../components/FloatingIcons/FloatingIconComp
 import Particles, { initParticlesEngine } from '@tsparticles/react'
 import { loadParticlesLinksInteraction } from '@tsparticles/interaction-particles-links'
 import { loadFull } from "tsparticles";
+import { TypeAnimation } from "react-type-animation"
 import Rodal from 'rodal';
 
 class Home extends Component {
@@ -84,25 +85,39 @@ class Home extends Component {
                             }
                         }
                     }} />
-                <header id='header' class="header">
-                    <div class="u-center-content-horizontally">
-                        <a href="#" class="menu-button" onClick={() => { this.handleModalButton('about') }}><span>About</span></a>
-                        <a href="#" class="menu-button" onClick={() => { this.handleModalButton('projects') }}><span>Projects</span></a>
-                        <a href="#" class="menu-button" onClick={this.handleResumeButton}><span>Resume</span></a>
+                <header id='header' className="header">
+                    <div className="u-center-content-horizontally">
+                        <a href="#" className="menu-button" onClick={() => { this.handleModalButton('about') }}><span>About</span></a>
+                        <a href="#" className="menu-button" onClick={() => { this.handleModalButton('projects') }}><span>Projects</span></a>
+                        <a href="#" className="menu-button" onClick={this.handleResumeButton}><span>Resume</span></a>
                     </div>
-                    <div class="grid">
-                        <div class="col_sm-11">
-                            <div class="header__text-box">
-                                <h1 class="heading-primary">
-                                    <span class="heading-primary--main">Douglas Marques</span>
-                                    <span class="heading-primary--sub">Developer</span><span class="heading-primary--blink">|</span>
+                    <div className="grid">
+                        <div className="col_sm-11">
+                            <div className="header__text-box">
+                                <h1 className="heading-primary">
+                                    <span className="heading-primary--main">Douglas Marques</span>
+                                    <TypeAnimation className={'heading-primary--sub'}
+                                        sequence={[
+                                            'I love to build things',
+                                            1500,
+                                            'I love to travel the world',
+                                            1500,
+                                            'I love to learn speaking languages',
+                                            1500,
+                                            'I am a Software Engineer',
+                                            10000,
+                                        ]}
+                                        wrapper="span"
+                                        speed={30}
+                                        repeat={0} //0, 3, infinity
+                                    />
                                 </h1>
                             </div>
                         </div>
                     </div>
                 </header>
-                <div class="grid">
-                    <div id='footer' class="footer-copyright-mainpage col_lg-12" style={{ textAlign: 'center' }}>
+                <div className="grid">
+                    <div id='footer' className="footer-copyright-mainpage col_lg-12" style={{ textAlign: 'center' }}>
                         <FloatingIconsComponent />
                         <span>&copy; 2021-{this.state.year} DOUGLAS MARQUES</span>
                     </div>

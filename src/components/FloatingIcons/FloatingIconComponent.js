@@ -25,23 +25,23 @@ class FloatingIconsComponent extends Component {
 
     render() {
         return (
-            <div class="grid grid-center">
+            <div className="grid grid-center">
                 {this.state.showName ? <div>
-                    <a style={{ color: 'black' }} class='blog-header-center blog-header-hover' href="/" >Douglas Marques</a>
+                    <a style={{ color: 'black' }} className='blog-header-center blog-header-hover' href="/" >Douglas Marques</a>
                 </div> : ""}
-                <div style={{ 'display': 'flex', 'align-items': 'center', 'justify-content': 'center' }}>
-                    <div class="grow-container">
-                        <a href="#" class='to-grey circle-button'>
+                <div style={{ 'display': 'flex', 'alignItems': 'center', 'justifyContent': 'center' }}>
+                    <div className="grow-container">
+                        <a href="#" className='to-grey circle-button'>
                             <FontAwesomeIcon style={{'color': 'gray'}} icon={faGithub} onClick={this.githubClick} />
                         </a>
                     </div>
-                    <div class="grow-container">
-                        <a href="#" class='to-linkedin circle-button'>
+                    <div className="grow-container">
+                        <a href="#" className='to-linkedin circle-button'>
                             <FontAwesomeIcon style={{'color': 'gray'}} icon={faLinkedin} onClick={this.linkedInClick} />
                         </a>
                     </div>
-                    <div class="grow-container">
-                        <a href="#" class='to-red circle-button'>
+                    <div className="grow-container">
+                        <a href="#" className='to-red circle-button'>
                             <FontAwesomeIcon style={{'color': 'gray'}} icon={faEnvelope} onClick={this.mailClick} />
                         </a>
                     </div>
