@@ -25,6 +25,7 @@ class Home extends Component {
         this.state = {
             particlesInitialized: false,
             year: new Date().getFullYear(),
+            opacity: 0,
             rodalModal: {
                 visible: this.props.projects,
                 type: ''
@@ -59,22 +60,18 @@ class Home extends Component {
                 <Particles
                     options={{
                         detectRetina: false,
-                        fpsLimit: 60,
+                        fpsLimit: 120,
                         autoPlay: true,
                         particles: {
                             size: {
                                 value: 1
                             },
                             number: {
-                                value: 80,
-                                // density: {
-                                //     enable: true,
-                                //     value_area: 800
-                                // }
+                                value: 90,
                             },
                             move: {
                                 enable: true,
-                                speed: 1,
+                                speed: 0.8,
                                 outModes: "bounce"
                             },
                             links: {
@@ -97,20 +94,26 @@ class Home extends Component {
                                 <h1 className="heading-primary">
                                     <span className="heading-primary--main">Douglas Marques</span>
                                     <TypeAnimation className={'heading-primary--sub'}
-                                        sequence={[
-                                            'I love to build things',
-                                            1500,
-                                            'I love to travel the world',
-                                            1500,
-                                            'I love to learn speaking languages',
-                                            1500,
-                                            'I am a Software Engineer',
-                                            10000,
-                                        ]}
-                                        wrapper="span"
-                                        speed={30}
-                                        repeat={0} //0, 3, infinity
+                                                   sequence={[
+                                                       'I love building things',
+                                                       1250,
+                                                       'And solving problems being far away',
+                                                       1250,
+                                                       'That\'s why i love being a',
+                                                       1250,
+                                                       'Software Engineer',
+                                                   ]}
+                                                   wrapper="span"
+                                                   speed={30}
+                                                   deletionSpeed={65}
+                                                   cursor={true}
+                                                   repeat={0}
                                     />
+                                    {/*<br/>*/}
+                                    {/*<br/>*/}
+                                    {/*<br/>*/}
+                                    {/*<br/>*/}
+                                    {/*<span style={{opacity: this.state.opacity, transition: "all 2s ease"}}>Building the future, one code at a time.</span>*/}
                                 </h1>
                             </div>
                         </div>
