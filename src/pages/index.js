@@ -74,7 +74,7 @@ class Home extends Component {
                             move: {
                                 enable: true,
                                 speed: 1,
-                                outMode: "bounce"
+                                outModes: "bounce"
                             },
                             links: {
                                 distance: 120,
